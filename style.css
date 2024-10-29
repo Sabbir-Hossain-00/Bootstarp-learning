@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bs-dark-color:#1a1d20;
+    --bs-dark-primary:#1c1c1c;
+    --bs-main-color:#fff;
+    --bs-primary-color:#c6c6c6;
+
+}
+
+h1,h2,h3,h4,h5{
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--bs-dark-color);
+}
+
+h1{
+    font-size: 3.8rem;
+}
+h2{
+    line-height: 3rem;
+    font-size: 3.4rem;
+    font-weight: 600;
+}
+p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--bs-dark-color);
+    line-height: 1.55rem;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+/* common css code end here */
+/* navbar start here */
+
+/* navbar start here */
+/* hero section start here*/
+
+.vid video{
+    width: 70%;
+}
+p a{
+    text-decoration: none;
+    color: rgb(83, 185, 253);
+}
+h1 span{
+    color: rgb(87, 144, 250);
+}
+#hero-section{
+    position: relative;
+    height:80vh;
+    display: grid;
+    place-content: center;
+    background-color: rgb(0, 0, 0);
+}
+
+.custom-shape-divider-bottom-1730134830 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1730134830 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-bottom-1730134830 .shape-fill {
+    fill: #FFFFFF;
+}
+/* hero section end here */
+/* service section start here*/
+
+.card-box:hover{
+    box-shadow: 1px 1px 15px rgba(126, 125, 125, 0.4);
+}
+
+/* service section end here */
+/* more info section start here */
+#more-info-section{
+    width: 100%;
+    height: 50vh;
+    display: grid;
+    place-content: center;
+    background-image: url(landscape-with-bridge-night.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+ }
+ #more-info-section span{
+    color: dodgerblue;
+ }
+/* more info section end here */
+/* carosol start here */
+.carousel-control-next {
+    right: -401px;
+    background-color: #FFFFFF;
+}
+
+.carousel-control-prev{
+    left: -130px;
+ 
+}
+
+.carousel-indicators{
+    bottom: -50px;
+}
+
+
+
+.carousel-item .card{
+    width: 250px;
+    background-color:rgb(159, 66, 235);
+    color: #fff;
+    transition: all 0.5s linear;
+}
+.carousel-item .card p{
+    transition: all 0.5s linear;
+    color: #bebdbd;
+}
+
+.carousel-item .card:hover{
+    background-color: #fff;
+    color: #1a1d20;
+}
+.carousel-item .card:hover p{
+    color: #111;
+}
+
+/* carosol end here */
+/* contacat start here */
+.contact-section{
+    position: relative;
+}
+.contact-section .container{
+    padding: 0 300px;
+    margin: 40px 0;
+   
+}
+
+
+.custom-shape-divider-top-1730134634 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1730134634 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 127px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1730134634 .shape-fill {
+    fill: #FFFFFF;
+}
+/* contact end here */
+/* footer start here */
+.footer-section{
+    background-color:#111;
+    color: #fff;
+    position: relative;
+    padding-bottom: 20px;
+}
+.footer-section p{
+    color: #fff;
+    margin: 0;
+}
+.footer-section a{
+    text-decoration: none;
+    color: #fff;
+}
+.footer-section a:hover{
+    color: dodgerblue;
+}
+.foot{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.copycight p{
+    padding: 10px 0;
+    color: lightslategray;
+}
+
+/* footer end here */
+
+
+
+
+
+
+/* media queries */
+
+@media (max-width:768px) {
+    #hero-section{
+        height:100vh;
+    }
+    #more-info-section{
+        height: 80vh;
+    }
+   
+}
+@media (max-width:992px) {
+    #hero-section{
+        height:100vh;
+    }
+    #more-info-section{
+        height: 90vh;
+    }
+    .contact-section .container{
+        padding: 0 20px;
+    }
+    .foot{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width:576px) {
+    body{
+        overflow-x: hidden;
+    }
+    #hero-section{
+        overflow-x: hidden;
+        height:100vh;
+    }
+    #more-info-section{
+        overflow-x: hidden;
+        height: 130vh;
+        padding-bottom: 20px;
+    }
+    .multi-card{
+        overflow-x: hidden;
+    }
+    .service-section{
+        overflow-x: hidden;
+    }
+    .contact-section {
+        overflow-x: hidden;
+    }
+    .contact-section .container{
+        padding: 0 20px;
+    }
+    .foot{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
